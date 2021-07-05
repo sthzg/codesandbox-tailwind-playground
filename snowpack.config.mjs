@@ -28,11 +28,11 @@ const getHostName = () => {
 export default {
   root: 'src',
   devOptions: {
-    output: 'stream',
+    output: isSSE ? 'stream' : 'dashboard',
     tailwindConfig: './tailwind.config.js',
     hostname: getHostName(),
     port: 8080,
-    hmrPort: 443
+    hmrPort: isSSE ? 443 : 8080,
   },
   plugins: [
     '@snowpack/plugin-postcss',
