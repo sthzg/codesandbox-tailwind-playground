@@ -1,0 +1,19 @@
+{
+  "license": "MIT",
+  "dependencies": {
+    "@tailwindcss/typography": "^0.4.1",
+    "add": "^2.0.6",
+    "yarn": "^1.22.10"
+  },
+  "devDependencies": {
+    "@snowpack/plugin-postcss": "^1.4.3",
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
+    "snowpack": "^3.7.1",
+    "tailwindcss": "^2.2.4"
+  },
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build"
+  }
+}
